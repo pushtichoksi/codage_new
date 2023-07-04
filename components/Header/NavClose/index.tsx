@@ -46,7 +46,7 @@ const NavClose: React.FC<NavCloseProps> = ({
         <div className="py-[3.125em] flex justify-between items-center z-[999]">
           <div className="w-full flex justify-between items-center">
             <div className="logo">
-              <Link href="/">{logo && <Image block={logo} />}</Link>
+              {/* <Link href="/">{logo && <Image block={logo} />}</Link> */}
             </div>
 
             <div className="closeItem" onClick={() => onClickOpenNav(false)}>
