@@ -42,7 +42,7 @@ const Header: React.FC<HeaderProps> = ({
   return (
     <div className="block bg-black">
       <header className={clsx("headerSection", sectionTheme ?? "bg-white")}>
-        {!navOpen && (
+        {navOpen && (
           <NavOpen
             onClickOpenNav={openNav}
             hireDedicatedPages={hireDedicatedPages}
@@ -52,7 +52,10 @@ const Header: React.FC<HeaderProps> = ({
             block={block}
           />
         )}
-        {navOpen && <NavClose block={block} onClickOpenNav={openNav} footer={footer} />}
+        {!navOpen && <NavClose 
+        block={block} 
+        onClickOpenNav={openNav} 
+        footer={footer} />}
       </header>
     </div>
   );
