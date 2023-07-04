@@ -96,7 +96,7 @@ const NavOpen: React.FC<NavOpenProps> = ({
                     extractedSubItems && extractedSubItems?.length - 1
                   }`}
                 >
-                  {extractedSubItems
+                  {/* {extractedSubItems
                     ?.filter((i) => i?.data?.length != 0)
                     ?.map((i, index) => {
                       return (
@@ -104,7 +104,7 @@ const NavOpen: React.FC<NavOpenProps> = ({
                           {i && <ServicesNavbar block={i} />}
                         </div>
                       );
-                    })}
+                    })} */}
                 </div>
               </div>
             </li>
@@ -122,7 +122,7 @@ const NavOpen: React.FC<NavOpenProps> = ({
                   isLinkActive ? "none" : "block"
                 }`}
               >
-                <div className="dropdownGrid col-1">
+                {/* <div className="dropdownGrid col-1">
                   {extractedSubItemsOfHireDedicated?.map((i, index) => {
                     return (
                       <div className="dropdownBox" key={index}>
@@ -130,7 +130,7 @@ const NavOpen: React.FC<NavOpenProps> = ({
                       </div>
                     );
                   })}
-                </div>
+                </div> */}
               </div>
             </li>
             {/* dropdown */}
