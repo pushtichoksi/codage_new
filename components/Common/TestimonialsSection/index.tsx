@@ -41,7 +41,7 @@ const TestimonialsSection: React.FC<{ block: TestimonialsSectionFragment }> = ({
             {titleSubtitle && <TitleSubtitle block={titleSubtitle} />}
           </div>
           <div className="testimonialWrap">
-            <Carousel
+            {/* <Carousel
               responsive={responsive}
               arrows={false}
               showDots={true}
@@ -72,7 +72,7 @@ const TestimonialsSection: React.FC<{ block: TestimonialsSectionFragment }> = ({
                     </div>
                   );
                 })}
-            </Carousel>
+            </Carousel> */}
           </div>
         </div>
       </div>
