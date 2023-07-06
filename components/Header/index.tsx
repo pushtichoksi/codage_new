@@ -12,6 +12,10 @@ import dynamic from "next/dynamic";
 const NavOpen = dynamic(() => import("./NavOpen"));
 const NavClose = dynamic(() => import('./NavClose'))
 
+export const config = {
+  unstable_runtimeJS: false
+}
+
 export type HeaderProps = {
   block?: HeaderFragment;
   footer?: FooterFragment;
